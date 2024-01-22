@@ -1,0 +1,167 @@
+* {
+  font-family: Helvetica;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+header {
+  width: fit-content;
+}
+
+aside {
+  position: fixed;
+  width: fit-content;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #333;
+  color: #f0f0f0;
+  overflow: auto;
+  padding: 0 8px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+aside::-webkit-scrollbar {
+  width: 5px;
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+aside::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.itemContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.itemContainer:hover {
+  color: yellow;
+}
+
+.customContainer button {
+  background-color: aliceblue;
+  height: 50px;
+  width: 50%;
+  margin-left: 0;
+  border-radius: 10px;
+  border: none;
+  color: #333;
+}
+
+.customContainer button:hover {
+  background-color: yellow;
+}
+
+.customContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+
+.customContainer input {
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+  margin-bottom: -100px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  width: 100%;
+}
+
+input {
+  width: 30%;
+  height: 50px;
+  padding: 0;
+  border-radius: 10px;
+}
+
+form button {
+  height: 50px;
+  margin-left: 20px;
+  width: 70px;
+  background-color: #333;
+  border-radius: 10px;
+  border: none;
+  color: #f0f0f0;
+}
+
+form button:hover {
+  background-color: yellow;
+  color: #333;
+}
+
+input:placeholder-shown {
+  font-size: 20px;
+}
+
+input {
+  font-size: 20px;
+}
+
+.iframe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+iframe::-webkit-scrollbar {
+  width: 5px;
+}
+
+iframe::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+iframe::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Cor da trilha da barra de rolagem */
+  border-radius: 6px; /* Raio de borda da trilha da barra de rolagem */
+}
+
+.infoScreen {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.infoScreen p {
+  padding: 0 20px;
+}
+
+.rotate {
+  animation: rotateAnimation 0.5s ease-in-out; /* 1s é a duração da animação */
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
