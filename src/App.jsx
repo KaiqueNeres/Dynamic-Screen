@@ -50,7 +50,7 @@ function App() {
       (!widthCustom && heightCustom) ||
       (widthCustom && !heightCustom)
     ) {
-      return toast.error("Largura e altura devem ser informados");
+      return toast.error("Width and Height must be informed");
     }
     setWidthScreen(widthCustom);
     setHeightScreen(heightCustom);
@@ -101,10 +101,12 @@ function App() {
                   style={{ flexDirection: "column", marginTop: 10 }}
                 >
                   <input
+                  placeholder="Width"
                     onChange={(e) => setWidthCustom(e.target.value)}
                     type="number"
                   />
                   <input
+                  placeholder="Height"
                     onChange={(e) => setHeightCustom(e.target.value)}
                     type="number"
                   />
